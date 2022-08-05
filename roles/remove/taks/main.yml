@@ -1,0 +1,9 @@
+---
+
+- name: Run RKE2 uninstall script
+  shell: /opt/rke2/bin/rke2-uninstall.sh
+  register: uninstall
+
+- name: Display result
+  debug:
+    msg: "{{ uninstall }}"
