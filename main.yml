@@ -1,0 +1,6 @@
+- hosts: all
+  any_errors_fatal: true
+  become: yes
+  roles:
+    - role: remove
+  serial: 3
